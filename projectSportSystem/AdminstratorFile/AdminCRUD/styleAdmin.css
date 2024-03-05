@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  --main-color: #22baa0;
+  --color-dark: #34425a;
+  --text-grey: #b0b0b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Merriweather", sans-serif;
+}
+
+#menu-toggle {
+  display: none;
+}
+body{
+  margin: -20px;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 165px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 100;
+  background: var(--color-dark);
+  transition: left 300ms;
+}
+
+.side-header {
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
+  background: var(--main-color);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-header h3,
+side-head span {
+  color: #fff;
+  font-weight: 400;
+}
+
+.side-content {
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+
+.profile {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.profile-img {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  margin: 0 auto 0.5rem auto;
+  border: 3px solid #899dc1;
+}
+
+.profile h4 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.profile small {
+  color: #899dc1;
+  font-weight: 600;
+}
+
+.side-menu ul {
+  text-align: center;
+}
+
+.side-menu a {
+  display: block;
+  padding: 1.2rem 0rem;
+}
+
+.side-menu a.active {
+  background: #2b384e;
+}
+
+.side-menu a.active span,
+.side-menu a.active small {
+  color: #fff;
+}
+
+.side-menu a span {
+  display: block;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.side-menu a span,
+.side-menu a small {
+  color: #899dc1;
+}
+
+.main-content {
+  margin-left: 165px;
+  width: calc(100% - 165px);
+  transition: margin-left 300ms;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 165px;
+  z-index: 100;
+  height: 60px;
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
+  background: #fff;
+  transition: left 300ms;
+}
+
+.header-content,
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+.header-content label {
+  cursor: pointer;
+}
+
+.header-menu {
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+}
+
+.header-menu label,
+.header-menu .notify-icon {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.header-menu label span,
+.notify-icon span:first-child {
+  font-size: 1.3rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user div,
+.client-img {
+  height: 40px;
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.user span:last-child {
+  display: inline-block;
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
+}
+/* i am here for editing */
+main {
+  margin-top: 60px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+
+.page-header {
+  padding: 1.3rem 1rem;
+  background: #2b384e;
+  border-bottom: 1px solid #dee2e8;
+}
+
+.page-header h1,
+.page-header small {
+  color: #fff;
+}
+.userInfo,
+.userCategory {
+  font-weight: 400;
+  font-size: x-large;
+}
+
+.btn.btn-info.btn-sm,
+.btn.btn-success.btn-sm,
+.btn.btn-danger.btn-sm,
+.btn.btn-primary.float-end,
+.btn.btn-danger.float-end {
+  font-size: 15px;
+}
+
+.page-content {
+  padding: 1.3rem 1rem;
+  background: #f1f4f9;
+}
+
+.record-header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add,
+.browse {
+  display: flex;
+  align-items: center;
+}
+
+.add span {
+  display: inline-block;
+  margin-right: 0.6rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+input,
+button,
+select {
+  outline: none;
+}
+
+.add select,
+.browse input,
+.browse select {
+  height: 35px;
+  border: 1px solid #b0b0b0;
+  border-radius: 3px;
+  display: inline-block;
+  width: 75px;
+  padding: 0rem 0.5rem;
+  margin-right: 0.8rem;
+  color: #666;
+}
+
+.add button {
+  background: var(--main-color);
+  color: #fff;
+  height: 37px;
+  border-radius: 4px;
+  padding: 0rem 1rem;
+  border: none;
+  font-weight: 600;
+}
+
+.browse input {
+  width: 150px;
+}
+
+.browse select {
+  width: 100px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow: auto;
+}
